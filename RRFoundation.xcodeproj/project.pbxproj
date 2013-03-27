@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		781D378B1703364100637423 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781D378A1703364100637423 /* Cocoa.framework */; };
 		781D37951703364100637423 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 781D37931703364100637423 /* InfoPlist.strings */; };
-		781D37991703364100637423 /* RRFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 781D37981703364100637423 /* RRFoundation.m */; };
 		781D37A11703364100637423 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781D37A01703364100637423 /* SenTestingKit.framework */; };
 		781D37A21703364100637423 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781D378A1703364100637423 /* Cocoa.framework */; };
 		781D37A51703364100637423 /* RRFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781D37871703364100637423 /* RRFoundation.framework */; };
 		781D37AB1703364100637423 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 781D37A91703364100637423 /* InfoPlist.strings */; };
 		781D37AE1703364100637423 /* RRFoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 781D37AD1703364100637423 /* RRFoundationTests.m */; };
+		781D37BB170336B900637423 /* NSString+RRFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 781D37B9170336B900637423 /* NSString+RRFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		781D37BC170336B900637423 /* NSString+RRFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 781D37BA170336B900637423 /* NSString+RRFoundation.m */; };
+		781D37BF1703386400637423 /* StringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 781D37BE1703386400637423 /* StringTests.m */; };
+		781D37C01703394900637423 /* RRFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 781D37971703364100637423 /* RRFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +40,16 @@
 		781D37941703364100637423 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		781D37961703364100637423 /* RRFoundation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RRFoundation-Prefix.pch"; sourceTree = "<group>"; };
 		781D37971703364100637423 /* RRFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRFoundation.h; sourceTree = "<group>"; };
-		781D37981703364100637423 /* RRFoundation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRFoundation.m; sourceTree = "<group>"; };
 		781D379F1703364100637423 /* RRFoundationTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RRFoundationTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		781D37A01703364100637423 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		781D37A81703364100637423 /* RRFoundationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RRFoundationTests-Info.plist"; sourceTree = "<group>"; };
 		781D37AA1703364100637423 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		781D37AC1703364100637423 /* RRFoundationTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRFoundationTests.h; sourceTree = "<group>"; };
 		781D37AD1703364100637423 /* RRFoundationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRFoundationTests.m; sourceTree = "<group>"; };
+		781D37B9170336B900637423 /* NSString+RRFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RRFoundation.h"; sourceTree = "<group>"; };
+		781D37BA170336B900637423 /* NSString+RRFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RRFoundation.m"; sourceTree = "<group>"; };
+		781D37BD1703386400637423 /* StringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringTests.h; sourceTree = "<group>"; };
+		781D37BE1703386400637423 /* StringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				781D37971703364100637423 /* RRFoundation.h */,
-				781D37981703364100637423 /* RRFoundation.m */,
+				781D37B9170336B900637423 /* NSString+RRFoundation.h */,
+				781D37BA170336B900637423 /* NSString+RRFoundation.m */,
 				781D37911703364100637423 /* Supporting Files */,
 			);
 			path = RRFoundation;
@@ -132,6 +139,8 @@
 			children = (
 				781D37AC1703364100637423 /* RRFoundationTests.h */,
 				781D37AD1703364100637423 /* RRFoundationTests.m */,
+				781D37BD1703386400637423 /* StringTests.h */,
+				781D37BE1703386400637423 /* StringTests.m */,
 				781D37A71703364100637423 /* Supporting Files */,
 			);
 			path = RRFoundationTests;
@@ -153,6 +162,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				781D37BB170336B900637423 /* NSString+RRFoundation.h in Headers */,
+				781D37C01703394900637423 /* RRFoundation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				781D37991703364100637423 /* RRFoundation.m in Sources */,
+				781D37BC170336B900637423 /* NSString+RRFoundation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				781D37AE1703364100637423 /* RRFoundationTests.m in Sources */,
+				781D37BF1703386400637423 /* StringTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
