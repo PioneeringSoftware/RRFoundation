@@ -1,4 +1,4 @@
-// RRFoundation StringTests.h
+// RRFoundationTests StringTests.h
 //
 // Copyright © 2013, Roy Ratcliffe, Pioneering Software, United Kingdom
 //

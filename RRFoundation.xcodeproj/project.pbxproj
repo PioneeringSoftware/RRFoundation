@@ -50,6 +50,7 @@
 		781D37BA170336B900637423 /* NSString+RRFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RRFoundation.m"; sourceTree = "<group>"; };
 		781D37BD1703386400637423 /* StringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringTests.h; sourceTree = "<group>"; };
 		781D37BE1703386400637423 /* StringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringTests.m; sourceTree = "<group>"; };
+		78B75A91170460E000A5ED9F /* MIT-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "MIT-LICENSE.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 		781D377D1703364100637423 = {
 			isa = PBXGroup;
 			children = (
+				78B75A91170460E000A5ED9F /* MIT-LICENSE.txt */,
 				781D37901703364100637423 /* RRFoundation */,
 				781D37A61703364100637423 /* RRFoundationTests */,
 				781D37891703364100637423 /* Frameworks */,
@@ -451,6 +453,7 @@
 				781D37B31703364100637423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		781D37B41703364100637423 /* Build configuration list for PBXNativeTarget "RRFoundationTests" */ = {
 			isa = XCConfigurationList;
@@ -459,6 +462,7 @@
 				781D37B61703364100637423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
