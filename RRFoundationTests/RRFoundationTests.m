@@ -24,6 +24,24 @@
 
 #import "RRFoundationTests.h"
 
+#import <RRFoundation/RRFoundation.h>
+
 @implementation RRFoundationTests
+
+- (void)testVersionString
+{
+	// Short version string corresponds to the marketing version. You can change
+	// it at the command line using `agvtool new-marketing-version x.y` where
+	// `x.y` stands for the major.minor version numbers; patch version elided
+	// because the marketing version cannot take three version number
+	// components, only two.
+	NSBundle *bundle = [NSBundle bundleWithIdentifier:@"uk.co.pioneeringsoftware.RRFoundation"];
+	NSDictionary *info = [bundle infoDictionary];
+	NSString *bundleShortVersionString = [info objectForKey:@"CFBundleShortVersionString"];
+	NSString *bundleVersion = [info objectForKey:(NSString *)kCFBundleVersionKey];
+	NSString *versionString = [NSString stringWithFormat:@"@(#)PROGRAM:RRFoundation  PROJECT:RRFoundation-%@", bundleVersion];
+	STAssertEqualObjects(RRFoundationVersionString(), versionString, nil);
+	STAssertEquals(kRRFoundationVersionNumber, [bundleShortVersionString doubleValue], nil);
+}
 
 @end

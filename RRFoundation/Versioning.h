@@ -1,6 +1,6 @@
-/* RRFoundation RRFoundation.h
+/* RRFoundation Versioning.h
  *
- * Copyright © 2011–2013, Roy Ratcliffe, Pioneering Software, United Kingdom
+ * Copyright © 2013, Roy Ratcliffe, Pioneering Software, United Kingdom
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the “Software”), to deal
@@ -22,6 +22,15 @@
  *
  ******************************************************************************/
 
-#import <RRFoundation/NSString+RRFoundation.h>
+#import <Foundation/Foundation.h>
 
-#import <RRFoundation/Versioning.h>
+extern const unsigned char kRRFoundationVersionString[];
+extern const double kRRFoundationVersionNumber;
+
+/*!
+ * Answers the current Apple-generic versioning-formatted version string. The
+ * version string has been trimmed. It has no leading or trailing whitespace or
+ * newlines. Note that the raw C-based version string contrastingly has a single
+ * terminating newline character.
+ */
+NSString *RRFoundationVersionString(void);
