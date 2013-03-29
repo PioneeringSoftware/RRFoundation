@@ -2,13 +2,23 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>--project-version</key>
-	<string>0.0.2</string>
-	<key>--company-id</key>
-	<string>uk.co.pioneeringsoftware</string>
-	<key>--project-company</key>
-	<string>Pioneering Software, United Kingdom</string>
+	<key>--index-desc</key>
+	<string>README.md</string>
 	<key>--project-name</key>
 	<string>RRFoundation</string>
+	<key>--project-version</key>
+	<string>0.0.2</string>
+	<key>--project-company</key>
+	<string>Pioneering Software, United Kingdom</string>
+	<key>--company-id</key>
+	<string>uk.co.pioneeringsoftware</string>
+	<key>--keep-undocumented-objects</key>
+	<false/>
+	<key>--keep-undocumented-members</key>
+	<false/>
+	<key>--docset-feed-url</key>
+	<string>http://pioneeringsoftware.co.uk/downloads/%DOCSETATOMFILENAME</string>
+	<key>--docset-package-url</key>
+	<string>http://pioneeringsoftware.co.uk/downloads/%DOCSETPACKAGEFILENAME</string>
 </dict>
 </plist>
